@@ -6,7 +6,7 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class User extends Authenticatable
+class Usuario extends Authenticatable
 {
     use Notifiable;
 
@@ -16,7 +16,14 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'nome_usuario', 
+        'username',  
+        'senha_usuario',
+        'cpf_usuario',
+        'telefone_usuario',
+        'email_usuario',
+        'pontuacao_usuario',
+        'indicados',
     ];
 
     /**
@@ -25,6 +32,11 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        'senha', 'remember_token',
     ];
+
+    public function indicados()
+    {
+        return $this->hasMany('App\Indicado');
+    }
 }
