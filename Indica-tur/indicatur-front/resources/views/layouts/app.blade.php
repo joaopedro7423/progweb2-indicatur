@@ -15,6 +15,7 @@
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link href="{{ asset('js/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
@@ -25,7 +26,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 
-<body>
+<body id="page-top">
     <div id="app">
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -437,33 +438,33 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input class="form-control" id="name" type="text" placeholder="Your Name *"
-                                            required="required" data-validation-required-message="Please enter your name.">
+                                        <input class="form-control" id="name" type="text" placeholder="Nome *" required="required"
+                                            data-validation-required-message="Por favor, insira seu nome.">
                                         <p class="help-block text-danger"></p>
                                     </div>
                                     <div class="form-group">
-                                        <input class="form-control" id="email" type="email" placeholder="Your Email *"
-                                            required="required" data-validation-required-message="Please enter your email address.">
+                                        <input class="form-control" id="email" type="email" placeholder="Email *"
+                                            required="required" data-validation-required-message="Por favor insira seu email.">
                                         <p class="help-block text-danger"></p>
                                     </div>
                                     <div class="form-group">
-                                        <input class="form-control" id="phone" type="tel" placeholder="Your Phone *"
-                                            required="required" data-validation-required-message="Please enter your phone number.">
+                                        <input class="form-control" id="phone" type="tel" placeholder="Telefone *"
+                                            required="required" data-validation-required-message="Por favor, insira seu telefone.">
                                         <p class="help-block text-danger"></p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <textarea class="form-control" id="message" placeholder="Your Message *"
-                                            required="required" data-validation-required-message="Please enter a message."></textarea>
+                                        <textarea class="form-control" id="message" placeholder="Mensagem *" required="required"
+                                            data-validation-required-message="Por favor, insira sua mensagem."></textarea>
                                         <p class="help-block text-danger"></p>
                                     </div>
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="col-lg-12 text-center">
                                     <div id="success"></div>
-                                    <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send
-                                        Message</button>
+                                    <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Envie
+                                        sua mensagem</button>
                                 </div>
                             </div>
                         </form>
@@ -477,7 +478,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                        <span class="copyright">Copyright &copy; Your Website 2018</span>
+                        <span class="copyright">Copyright &copy; Wooser corporation 2018</span>
                     </div>
                     <div class="col-md-4">
                         <ul class="list-inline social-buttons">
@@ -501,10 +502,10 @@
                     <div class="col-md-4">
                         <ul class="list-inline quicklinks">
                             <li class="list-inline-item">
-                                <a href="#">Privacy Policy</a>
+                                <a href="#">Política de privacidade</a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="#">Terms of Use</a>
+                                <a href="#">Termos de uso</a>
                             </li>
                         </ul>
                     </div>
@@ -736,6 +737,16 @@
             </div>
         </div>
     </div>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="{{asset('js/script.js')}}" defer></script>
+    <script type="text/javascript" src="{{asset('js/vendor/jquery-easing/jquery.easing.min.js')}}" defer></script>
+    <script type="text/javascript" src="{{asset('js/vendor/jquery/jquery.min.js')}}" defer></script>
+    <script type="text/javascript" src="{{asset('js/vendor/bootstrap/js/bootstrap.bundle.min.js') }}" defer></script>
+
+    <!-- Contato -->
+    <script type="text/javascript" src="{{asset('js/contact_me.js')}}" defer></script>
+    <script type="text/javascript" src="{{asset('js/jqBootstrapValidation.js')}}" defer></script>
 </body>
 
 </html>
