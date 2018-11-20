@@ -1,7 +1,10 @@
 <?php
 
 
-Route::get('/', 'HomeController@index')->name('home');
+Route::get('/listausuarios', 'UsuarioController@listaUsuarios')->name('ListaUsuarios');
+
+
+Route::get('/home', 'HomeController@home')->name('homepage');
 
 Auth::routes();
 

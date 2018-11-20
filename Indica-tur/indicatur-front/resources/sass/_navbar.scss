@@ -1,28 +1,28 @@
 // Styling for the navbar
 #mainNav {
-  //
-  //background-color: $primary;
+  //color
   .navbar-toggler {
     font-size: 15px;
     right: 0;
     padding: 13px;
     text-transform: uppercase;
-    color:$secondary;
+    //color
+    //color:$secondary;
     border: 0;
     //bg-color 
-    background-color: $primary;
+    //background-color: $primary;
     @include heading-font;
   }
   .navbar-brand {
     //cor logo
-    color: $secondary;
+    color: $primary;
     @include script-font;
     &.active,
     &:active,
     &:focus,
     &:hover {
       //cor ao passar em cima da logo
-      color: darken($primary, 10%);
+      color: darken($secondary, 7.5%) !important;
     }
   }
   .navbar-nav {
@@ -30,15 +30,15 @@
       .nav-link {
         font-size: 90%;
         font-weight: 400;
-        padding: 0.75em 0;
+        padding: 1.10em 0;
         letter-spacing: 1px;
         //cor menu = serviços, portfolios e etc.
-        color: $secondary;
+        color: $primary;
         @include heading-font;
         &.active,
         &:hover {
           //cor ao passar em cima dos links individuais
-          color: $base-color;
+          color: darken($secondary, 7.5%) !important;
         }
       }
     }
@@ -54,7 +54,7 @@
     border: none;
     background-color: transparent;
     .navbar-brand {
-      font-size: 1.75em;
+      font-size: 2.20em;
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       transition: all 0.3s;
@@ -69,9 +69,10 @@
     &.navbar-shrink {
       padding-top: 0;
       padding-bottom: 0;
-      background-color: $primary;
+      //cor navbar
+      background-color: $secondary;
       .navbar-brand {
-        font-size: 1.25em;
+        font-size: 1.75em;
         padding: 12px 0;
       }
     }
