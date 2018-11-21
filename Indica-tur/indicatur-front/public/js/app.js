@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 15);
+/******/ 	return __webpack_require__(__webpack_require__.s = 14);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -71,7 +71,7 @@
 
 
 var bind = __webpack_require__(6);
-var isBuffer = __webpack_require__(23);
+var isBuffer = __webpack_require__(22);
 
 /*global toString:true*/
 
@@ -408,7 +408,7 @@ module.exports = g;
 /* WEBPACK VAR INJECTION */(function(process) {
 
 var utils = __webpack_require__(0);
-var normalizeHeaderName = __webpack_require__(25);
+var normalizeHeaderName = __webpack_require__(24);
 
 var DEFAULT_CONTENT_TYPE = {
   'Content-Type': 'application/x-www-form-urlencoded'
@@ -13743,12 +13743,12 @@ process.umask = function() { return 0; };
 
 
 var utils = __webpack_require__(0);
-var settle = __webpack_require__(26);
-var buildURL = __webpack_require__(28);
-var parseHeaders = __webpack_require__(29);
-var isURLSameOrigin = __webpack_require__(30);
+var settle = __webpack_require__(25);
+var buildURL = __webpack_require__(27);
+var parseHeaders = __webpack_require__(28);
+var isURLSameOrigin = __webpack_require__(29);
 var createError = __webpack_require__(9);
-var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(31);
+var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(30);
 
 module.exports = function xhrAdapter(config) {
   return new Promise(function dispatchXhrRequest(resolve, reject) {
@@ -13845,7 +13845,7 @@ module.exports = function xhrAdapter(config) {
     // This is only done if running in a standard browser environment.
     // Specifically not if we're in a web worker, or react-native.
     if (utils.isStandardBrowserEnv()) {
-      var cookies = __webpack_require__(32);
+      var cookies = __webpack_require__(31);
 
       // Add xsrf header
       var xsrfValue = (config.withCredentials || isURLSameOrigin(config.url)) && config.xsrfCookieName ?
@@ -13929,7 +13929,7 @@ module.exports = function xhrAdapter(config) {
 "use strict";
 
 
-var enhanceError = __webpack_require__(27);
+var enhanceError = __webpack_require__(26);
 
 /**
  * Create an Error with the specified message, config, error code, request and response.
@@ -13987,53 +13987,6 @@ module.exports = Cancel;
 
 /***/ }),
 /* 12 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(3)
-/* script */
-var __vue_script__ = __webpack_require__(43)
-/* template */
-var __vue_template__ = __webpack_require__(44)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/js/components/ExampleComponent.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-299e239e", Component.options)
-  } else {
-    hotAPI.reload("data-v-299e239e", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 13 */
 /***/ (function(module, exports) {
 
 /*
@@ -14115,7 +14068,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 14 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -14343,29 +14296,30 @@ function applyToTag (styleElement, obj) {
 
 
 /***/ }),
-/* 15 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(16);
+__webpack_require__(15);
 module.exports = __webpack_require__(56);
 
 
 /***/ }),
-/* 16 */
+/* 15 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_ListaUsuarioComponent_vue__ = __webpack_require__(45);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_ListaUsuarioComponent_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_ListaUsuarioComponent_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_HomepageComponent_vue__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_HomepageComponent_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_HomepageComponent_vue__);
-__webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_LogarComponent_vue__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_LogarComponent_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_LogarComponent_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_ListaUsuarioComponent_vue__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_ListaUsuarioComponent_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_ListaUsuarioComponent_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_HomepageComponent_vue__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_HomepageComponent_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_HomepageComponent_vue__);
+__webpack_require__(16);
 
-window.Vue = __webpack_require__(40);
+window.Vue = __webpack_require__(39);
 
-Vue.component('example-component', __webpack_require__(12));
-Vue.component('example-component', __webpack_require__(12));
+
 
 
 
@@ -14373,17 +14327,18 @@ var app = new Vue({
     el: '#app',
 
     components: {
-        ListaUsuarioComponent: __WEBPACK_IMPORTED_MODULE_0__components_ListaUsuarioComponent_vue___default.a,
-        HomepageComponent: __WEBPACK_IMPORTED_MODULE_1__components_HomepageComponent_vue___default.a
+        LogarComponent: __WEBPACK_IMPORTED_MODULE_0__components_LogarComponent_vue___default.a,
+        ListaUsuarioComponent: __WEBPACK_IMPORTED_MODULE_1__components_ListaUsuarioComponent_vue___default.a,
+        HomepageComponent: __WEBPACK_IMPORTED_MODULE_2__components_HomepageComponent_vue___default.a
     }
 });
 
 /***/ }),
-/* 17 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-window._ = __webpack_require__(18);
+window._ = __webpack_require__(17);
 
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
@@ -14395,7 +14350,7 @@ try {
   window.Popper = __webpack_require__(4).default;
   window.$ = window.jQuery = __webpack_require__(5);
 
-  __webpack_require__(20);
+  __webpack_require__(19);
 } catch (e) {}
 
 /**
@@ -14404,7 +14359,7 @@ try {
  * CSRF token as a header based on the value of the "XSRF" token cookie.
  */
 
-window.axios = __webpack_require__(21);
+window.axios = __webpack_require__(20);
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
@@ -14440,7 +14395,7 @@ if (token) {
 // });
 
 /***/ }),
-/* 18 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, module) {var __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -31552,10 +31507,10 @@ if (token) {
   }
 }.call(this));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1), __webpack_require__(19)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1), __webpack_require__(18)(module)))
 
 /***/ }),
-/* 19 */
+/* 18 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -31583,7 +31538,7 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 20 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
@@ -35533,13 +35488,13 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 21 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(22);
+module.exports = __webpack_require__(21);
 
 /***/ }),
-/* 22 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35547,7 +35502,7 @@ module.exports = __webpack_require__(22);
 
 var utils = __webpack_require__(0);
 var bind = __webpack_require__(6);
-var Axios = __webpack_require__(24);
+var Axios = __webpack_require__(23);
 var defaults = __webpack_require__(2);
 
 /**
@@ -35582,14 +35537,14 @@ axios.create = function create(instanceConfig) {
 
 // Expose Cancel & CancelToken
 axios.Cancel = __webpack_require__(11);
-axios.CancelToken = __webpack_require__(38);
+axios.CancelToken = __webpack_require__(37);
 axios.isCancel = __webpack_require__(10);
 
 // Expose all/spread
 axios.all = function all(promises) {
   return Promise.all(promises);
 };
-axios.spread = __webpack_require__(39);
+axios.spread = __webpack_require__(38);
 
 module.exports = axios;
 
@@ -35598,7 +35553,7 @@ module.exports.default = axios;
 
 
 /***/ }),
-/* 23 */
+/* 22 */
 /***/ (function(module, exports) {
 
 /*!
@@ -35625,7 +35580,7 @@ function isSlowBuffer (obj) {
 
 
 /***/ }),
-/* 24 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35633,8 +35588,8 @@ function isSlowBuffer (obj) {
 
 var defaults = __webpack_require__(2);
 var utils = __webpack_require__(0);
-var InterceptorManager = __webpack_require__(33);
-var dispatchRequest = __webpack_require__(34);
+var InterceptorManager = __webpack_require__(32);
+var dispatchRequest = __webpack_require__(33);
 
 /**
  * Create a new instance of Axios
@@ -35711,7 +35666,7 @@ module.exports = Axios;
 
 
 /***/ }),
-/* 25 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35730,7 +35685,7 @@ module.exports = function normalizeHeaderName(headers, normalizedName) {
 
 
 /***/ }),
-/* 26 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35763,7 +35718,7 @@ module.exports = function settle(resolve, reject, response) {
 
 
 /***/ }),
-/* 27 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35791,7 +35746,7 @@ module.exports = function enhanceError(error, config, code, request, response) {
 
 
 /***/ }),
-/* 28 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35864,7 +35819,7 @@ module.exports = function buildURL(url, params, paramsSerializer) {
 
 
 /***/ }),
-/* 29 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35924,7 +35879,7 @@ module.exports = function parseHeaders(headers) {
 
 
 /***/ }),
-/* 30 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35999,7 +35954,7 @@ module.exports = (
 
 
 /***/ }),
-/* 31 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36042,7 +35997,7 @@ module.exports = btoa;
 
 
 /***/ }),
-/* 32 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36102,7 +36057,7 @@ module.exports = (
 
 
 /***/ }),
-/* 33 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36161,18 +36116,18 @@ module.exports = InterceptorManager;
 
 
 /***/ }),
-/* 34 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var utils = __webpack_require__(0);
-var transformData = __webpack_require__(35);
+var transformData = __webpack_require__(34);
 var isCancel = __webpack_require__(10);
 var defaults = __webpack_require__(2);
-var isAbsoluteURL = __webpack_require__(36);
-var combineURLs = __webpack_require__(37);
+var isAbsoluteURL = __webpack_require__(35);
+var combineURLs = __webpack_require__(36);
 
 /**
  * Throws a `Cancel` if cancellation has been requested.
@@ -36254,7 +36209,7 @@ module.exports = function dispatchRequest(config) {
 
 
 /***/ }),
-/* 35 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36281,7 +36236,7 @@ module.exports = function transformData(data, headers, fns) {
 
 
 /***/ }),
-/* 36 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36302,7 +36257,7 @@ module.exports = function isAbsoluteURL(url) {
 
 
 /***/ }),
-/* 37 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36323,7 +36278,7 @@ module.exports = function combineURLs(baseURL, relativeURL) {
 
 
 /***/ }),
-/* 38 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36387,7 +36342,7 @@ module.exports = CancelToken;
 
 
 /***/ }),
-/* 39 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36421,7 +36376,7 @@ module.exports = function spread(callback) {
 
 
 /***/ }),
-/* 40 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47384,10 +47339,10 @@ Vue.compile = compileToFunctions;
 
 module.exports = Vue;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1), __webpack_require__(41).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1), __webpack_require__(40).setImmediate))
 
 /***/ }),
-/* 41 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {var scope = (typeof global !== "undefined" && global) ||
@@ -47443,7 +47398,7 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(42);
+__webpack_require__(41);
 // On some exotic environments, it's not clear which object `setimmediate` was
 // able to install onto.  Search each possibility in the same order as the
 // `setimmediate` library.
@@ -47457,7 +47412,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 42 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -47650,6 +47605,53 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1), __webpack_require__(7)))
 
 /***/ }),
+/* 42 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(3)
+/* script */
+var __vue_script__ = __webpack_require__(43)
+/* template */
+var __vue_template__ = __webpack_require__(44)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/LogarComponent.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-05bfe933", Component.options)
+  } else {
+    hotAPI.reload("data-v-05bfe933", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
 /* 43 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -47661,20 +47663,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     mounted: function mounted() {
-        console.log('Component mounted.');
+        console.log('Login Component mounted.');
     }
 });
 
@@ -47686,38 +47678,15 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", [_vm._v("\n    Logar Component\n")])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row justify-content-center" }, [
-        _c("div", { staticClass: "col-md-8" }, [
-          _c("div", { staticClass: "card card-default" }, [
-            _c("div", { staticClass: "card-header" }, [
-              _vm._v("Example Component")
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "card-body" }, [
-              _vm._v(
-                "\n                    I'm an example component.\n                "
-              )
-            ])
-          ])
-        ])
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-299e239e", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-05bfe933", module.exports)
   }
 }
 
@@ -47783,7 +47752,7 @@ var content = __webpack_require__(47);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(14)("5aa53b4b", content, false, {});
+var update = __webpack_require__(13)("5aa53b4b", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -47802,12 +47771,12 @@ if(false) {
 /* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(13)(false);
+exports = module.exports = __webpack_require__(12)(false);
 // imports
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -47874,6 +47843,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 
@@ -47881,9 +47852,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
     data: function data() {
         return {
-            list: []
+            list: [],
+            sortProperty: 'name',
+            sortDirection: 1
         };
     },
+
+
+    /*filters: {
+        orderBy(sortProperty, sortDirection);
+        sortProperty: 'name',
+        sortDirection: 1,
+    },*/
     ready: function ready() {},
     mounted: function mounted() {
         this.list = JSON.parse(this.users);
@@ -47899,11 +47879,51 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container" }, [
+    _c("pre", [
+      _vm._v(
+        "        " +
+          _vm._s(_vm._f("json")(_vm.sortProperty, _vm.sortDirection)) +
+          "\n    "
+      )
+    ]),
+    _vm._v(" "),
     _c(
       "table",
       { staticClass: "table table-bordered table-striped table-hover" },
       [
-        _vm._m(0),
+        _c("thead", [
+          _c("tr", [
+            _c("th", [
+              _c(
+                "a",
+                {
+                  attrs: { href: "#" },
+                  on: {
+                    click: function($event) {
+                      _vm.sort($event, "name")
+                    }
+                  }
+                },
+                [_vm._v(" Nome ")]
+              )
+            ]),
+            _vm._v(" "),
+            _c("th", [
+              _c(
+                "a",
+                {
+                  attrs: { href: "#" },
+                  on: {
+                    click: function($event) {
+                      _vm.sort($event, "email")
+                    }
+                  }
+                },
+                [_vm._v("E-mail")]
+              )
+            ])
+          ])
+        ]),
         _vm._v(" "),
         _c(
           "tbody",
@@ -47919,20 +47939,7 @@ var render = function() {
     )
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("thead", [
-      _c("tr", [
-        _c("th", [_vm._v("Nome")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("E-mail")])
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
@@ -48004,7 +48011,7 @@ var content = __webpack_require__(53);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(14)("aafbd946", content, false, {});
+var update = __webpack_require__(13)("aafbd946", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -48023,12 +48030,12 @@ if(false) {
 /* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(13)(false);
+exports = module.exports = __webpack_require__(12)(false);
 // imports
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -48039,6 +48046,9 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
 //
 //
 //
@@ -48805,7 +48815,7 @@ var staticRenderFns = [
                 }
               },
               [
-                _vm._v("\n                    Menu\n                    "),
+                _vm._v("\n                  Menu\n                  "),
                 _c("i", { staticClass: "fas fa-bars" })
               ]
             ),
@@ -48845,7 +48855,7 @@ var staticRenderFns = [
                       "a",
                       {
                         staticClass: "nav-link js-scroll-trigger",
-                        attrs: { href: "#about" }
+                        attrs: { href: "#sobre" }
                       },
                       [_vm._v("Sobre")]
                     )
@@ -48856,7 +48866,7 @@ var staticRenderFns = [
                       "a",
                       {
                         staticClass: "nav-link js-scroll-trigger",
-                        attrs: { href: "#team" }
+                        attrs: { href: "#time" }
                       },
                       [_vm._v("Time")]
                     )
@@ -48867,9 +48877,20 @@ var staticRenderFns = [
                       "a",
                       {
                         staticClass: "nav-link js-scroll-trigger",
-                        attrs: { href: "#contact" }
+                        attrs: { href: "#contato" }
                       },
                       [_vm._v("Contato")]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "nav-item" }, [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "nav-link js-scroll-trigger",
+                        attrs: { href: "#" }
+                      },
+                      [_vm._v("Login")]
                     )
                   ])
                 ])
@@ -48935,7 +48956,7 @@ var staticRenderFns = [
               _vm._v(" "),
               _c("p", { staticClass: "text-muted" }, [
                 _vm._v(
-                  "O IndicaTur tem como função principal fornecer um clube de indicações, \n                            onde sua recomendação é bonificada. Leia mais sobre nosso Clube e faça parte!"
+                  "O IndicaTur tem como função principal fornecer um clube de indicações, \n                          onde sua recomendação é bonificada. Leia mais sobre nosso Clube e faça parte!"
                 )
               ])
             ]),
@@ -48975,7 +48996,7 @@ var staticRenderFns = [
               _vm._v(" "),
               _c("p", { staticClass: "text-muted" }, [
                 _vm._v(
-                  "Nosso sistema permite que você possa transferir seus bônus para algum indicado, \n                            aumentando a chance de aproveitamento da bonificação."
+                  "Nosso sistema permite que você possa transferir seus bônus para algum indicado, \n                          aumentando a chance de aproveitamento da bonificação."
                 )
               ])
             ])
@@ -49050,10 +49071,12 @@ var staticRenderFns = [
               ),
               _vm._v(" "),
               _c("div", { staticClass: "portfolio-caption" }, [
-                _c("h4", [_vm._v("Explore")]),
+                _c("h4", [_vm._v("Montes Claros")]),
                 _vm._v(" "),
                 _c("p", { staticClass: "text-muted" }, [
-                  _vm._v("Graphic Design")
+                  _vm._v(
+                    "Temos rotas que acompanham os concursos públicos mais conhecidos. "
+                  )
                 ])
               ])
             ]),
@@ -49080,9 +49103,11 @@ var staticRenderFns = [
               ),
               _vm._v(" "),
               _c("div", { staticClass: "portfolio-caption" }, [
-                _c("h4", [_vm._v("Finish")]),
+                _c("h4", [_vm._v("São Paulo")]),
                 _vm._v(" "),
-                _c("p", { staticClass: "text-muted" }, [_vm._v("Identity")])
+                _c("p", { staticClass: "text-muted" }, [
+                  _vm._v("Nossas rotas incluem as grandes capitais")
+                ])
               ])
             ]),
             _vm._v(" "),
@@ -49108,9 +49133,11 @@ var staticRenderFns = [
               ),
               _vm._v(" "),
               _c("div", { staticClass: "portfolio-caption" }, [
-                _c("h4", [_vm._v("Lines")]),
+                _c("h4", [_vm._v("Maringá")]),
                 _vm._v(" "),
-                _c("p", { staticClass: "text-muted" }, [_vm._v("Branding")])
+                _c("p", { staticClass: "text-muted" }, [
+                  _vm._v("Trabalhamos também com o Sul do país")
+                ])
               ])
             ]),
             _vm._v(" "),
@@ -49136,10 +49163,10 @@ var staticRenderFns = [
               ),
               _vm._v(" "),
               _c("div", { staticClass: "portfolio-caption" }, [
-                _c("h4", [_vm._v("Southwest")]),
+                _c("h4", [_vm._v("Curitiba")]),
                 _vm._v(" "),
                 _c("p", { staticClass: "text-muted" }, [
-                  _vm._v("Website Design")
+                  _vm._v("Conheça a capital da Rússia Brasileira")
                 ])
               ])
             ]),
@@ -49166,25 +49193,27 @@ var staticRenderFns = [
               ),
               _vm._v(" "),
               _c("div", { staticClass: "portfolio-caption" }, [
-                _c("h4", [_vm._v("Window")]),
+                _c("h4", [_vm._v("Brasília")]),
                 _vm._v(" "),
-                _c("p", { staticClass: "text-muted" }, [_vm._v("Photography")])
+                _c("p", { staticClass: "text-muted" }, [
+                  _vm._v("Também podemos acompanhar sobre")
+                ])
               ])
             ])
           ])
         ])
       ]),
       _vm._v(" "),
-      _c("section", { attrs: { id: "about" } }, [
+      _c("section", { attrs: { id: "sobre" } }, [
         _c("div", { staticClass: "container" }, [
           _c("div", { staticClass: "row" }, [
             _c("div", { staticClass: "col-lg-12 text-center" }, [
               _c("h2", { staticClass: "section-heading text-uppercase" }, [
-                _vm._v("About")
+                _vm._v("Sobre")
               ]),
               _vm._v(" "),
               _c("h3", { staticClass: "section-subheading text-muted" }, [
-                _vm._v("Lorem ipsum dolor sit amet consectetur.")
+                _vm._v("Conheça um pouco sobre nossa história.")
               ])
             ])
           ]),
@@ -49212,7 +49241,7 @@ var staticRenderFns = [
                     _c("div", { staticClass: "timeline-body" }, [
                       _c("p", { staticClass: "text-muted" }, [
                         _vm._v(
-                          "Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n                                            Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui\n                                            quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore\n                                            laudantium consectetur!"
+                          "Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n                                          Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui\n                                          quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore\n                                          laudantium consectetur!"
                         )
                       ])
                     ])
@@ -49239,7 +49268,7 @@ var staticRenderFns = [
                     _c("div", { staticClass: "timeline-body" }, [
                       _c("p", { staticClass: "text-muted" }, [
                         _vm._v(
-                          "Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n                                            Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui\n                                            quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore\n                                            laudantium consectetur!"
+                          "Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n                                          Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui\n                                          quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore\n                                          laudantium consectetur!"
                         )
                       ])
                     ])
@@ -49266,7 +49295,7 @@ var staticRenderFns = [
                     _c("div", { staticClass: "timeline-body" }, [
                       _c("p", { staticClass: "text-muted" }, [
                         _vm._v(
-                          "Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n                                            Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui\n                                            quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore\n                                            laudantium consectetur!"
+                          "Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n                                          Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui\n                                          quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore\n                                          laudantium consectetur!"
                         )
                       ])
                     ])
@@ -49293,7 +49322,7 @@ var staticRenderFns = [
                     _c("div", { staticClass: "timeline-body" }, [
                       _c("p", { staticClass: "text-muted" }, [
                         _vm._v(
-                          "Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n                                            Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui\n                                            quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore\n                                            laudantium consectetur!"
+                          "Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n                                          Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui\n                                          quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore\n                                          laudantium consectetur!"
                         )
                       ])
                     ])
@@ -49303,13 +49332,9 @@ var staticRenderFns = [
                 _c("li", { staticClass: "timeline-inverted" }, [
                   _c("div", { staticClass: "timeline-image" }, [
                     _c("h4", [
-                      _vm._v(
-                        "Be Part\n                                        "
-                      ),
+                      _vm._v("Be Part\n                                      "),
                       _c("br"),
-                      _vm._v(
-                        "Of Our\n                                        "
-                      ),
+                      _vm._v("Of Our\n                                      "),
                       _c("br"),
                       _vm._v("Story!")
                     ])
@@ -49321,12 +49346,12 @@ var staticRenderFns = [
         ])
       ]),
       _vm._v(" "),
-      _c("section", { staticClass: "bg-light", attrs: { id: "team" } }, [
+      _c("section", { staticClass: "bg-light", attrs: { id: "time" } }, [
         _c("div", { staticClass: "container" }, [
           _c("div", { staticClass: "row" }, [
             _c("div", { staticClass: "col-lg-12 text-center" }, [
               _c("h2", { staticClass: "section-heading text-uppercase" }, [
-                _vm._v("Our Amazing Team")
+                _vm._v("Nosso time")
               ]),
               _vm._v(" "),
               _c("h3", { staticClass: "section-subheading text-muted" }, [
@@ -49343,7 +49368,7 @@ var staticRenderFns = [
                   attrs: { src: "img/team/1.jpg", alt: "" }
                 }),
                 _vm._v(" "),
-                _c("h4", [_vm._v("Kay Garland")]),
+                _c("h4", [_vm._v("Kobe Artic")]),
                 _vm._v(" "),
                 _c("p", { staticClass: "text-muted" }, [
                   _vm._v("Lead Designer")
@@ -49446,7 +49471,7 @@ var staticRenderFns = [
             _c("div", { staticClass: "col-lg-8 mx-auto text-center" }, [
               _c("p", { staticClass: "large text-muted" }, [
                 _vm._v(
-                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut\n                            eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut\n                            unde."
+                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut\n                          eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut\n                          unde."
                 )
               ])
             ])
@@ -49496,12 +49521,12 @@ var staticRenderFns = [
         ])
       ]),
       _vm._v(" "),
-      _c("section", { attrs: { id: "contact" } }, [
+      _c("section", { attrs: { id: "contato" } }, [
         _c("div", { staticClass: "container" }, [
           _c("div", { staticClass: "row" }, [
             _c("div", { staticClass: "col-lg-12 text-center" }, [
               _c("h2", { staticClass: "section-heading text-uppercase" }, [
-                _vm._v("Contact Us")
+                _vm._v("Contate-nos")
               ]),
               _vm._v(" "),
               _c("h3", { staticClass: "section-subheading text-muted" }, [
@@ -49603,7 +49628,7 @@ var staticRenderFns = [
                         },
                         [
                           _vm._v(
-                            "Envie\n                                        sua mensagem"
+                            "Envie\n                                      sua mensagem"
                           )
                         ]
                       )
@@ -49715,7 +49740,7 @@ var staticRenderFns = [
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
-                          "Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur\n                                        adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos\n                                        deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,\n                                        maiores repudiandae, nostrum, reiciendis facere nemo!"
+                          "Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur\n                                      adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos\n                                      deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,\n                                      maiores repudiandae, nostrum, reiciendis facere nemo!"
                         )
                       ]),
                       _vm._v(" "),
@@ -49736,7 +49761,7 @@ var staticRenderFns = [
                         [
                           _c("i", { staticClass: "fas fa-times" }),
                           _vm._v(
-                            "\n                                        Close Project"
+                            "\n                                      Close Project"
                           )
                         ]
                       )
@@ -49795,7 +49820,7 @@ var staticRenderFns = [
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
-                          "Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur\n                                        adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos\n                                        deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,\n                                        maiores repudiandae, nostrum, reiciendis facere nemo!"
+                          "Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur\n                                      adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos\n                                      deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,\n                                      maiores repudiandae, nostrum, reiciendis facere nemo!"
                         )
                       ]),
                       _vm._v(" "),
@@ -49816,7 +49841,7 @@ var staticRenderFns = [
                         [
                           _c("i", { staticClass: "fas fa-times" }),
                           _vm._v(
-                            "\n                                        Close Project"
+                            "\n                                      Close Project"
                           )
                         ]
                       )
@@ -49875,7 +49900,7 @@ var staticRenderFns = [
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
-                          "Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur\n                                        adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos\n                                        deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,\n                                        maiores repudiandae, nostrum, reiciendis facere nemo!"
+                          "Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur\n                                      adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos\n                                      deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,\n                                      maiores repudiandae, nostrum, reiciendis facere nemo!"
                         )
                       ]),
                       _vm._v(" "),
@@ -49896,7 +49921,7 @@ var staticRenderFns = [
                         [
                           _c("i", { staticClass: "fas fa-times" }),
                           _vm._v(
-                            "\n                                        Close Project"
+                            "\n                                      Close Project"
                           )
                         ]
                       )
@@ -49955,7 +49980,7 @@ var staticRenderFns = [
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
-                          "Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur\n                                        adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos\n                                        deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,\n                                        maiores repudiandae, nostrum, reiciendis facere nemo!"
+                          "Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur\n                                      adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos\n                                      deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,\n                                      maiores repudiandae, nostrum, reiciendis facere nemo!"
                         )
                       ]),
                       _vm._v(" "),
@@ -49976,7 +50001,7 @@ var staticRenderFns = [
                         [
                           _c("i", { staticClass: "fas fa-times" }),
                           _vm._v(
-                            "\n                                        Close Project"
+                            "\n                                      Close Project"
                           )
                         ]
                       )
@@ -50035,7 +50060,7 @@ var staticRenderFns = [
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
-                          "Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur\n                                        adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos\n                                        deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,\n                                        maiores repudiandae, nostrum, reiciendis facere nemo!"
+                          "Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur\n                                      adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos\n                                      deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,\n                                      maiores repudiandae, nostrum, reiciendis facere nemo!"
                         )
                       ]),
                       _vm._v(" "),
@@ -50056,7 +50081,7 @@ var staticRenderFns = [
                         [
                           _c("i", { staticClass: "fas fa-times" }),
                           _vm._v(
-                            "\n                                        Close Project"
+                            "\n                                      Close Project"
                           )
                         ]
                       )
@@ -50115,7 +50140,7 @@ var staticRenderFns = [
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
-                          "Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur\n                                        adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos\n                                        deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,\n                                        maiores repudiandae, nostrum, reiciendis facere nemo!"
+                          "Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur\n                                      adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos\n                                      deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,\n                                      maiores repudiandae, nostrum, reiciendis facere nemo!"
                         )
                       ]),
                       _vm._v(" "),
@@ -50136,7 +50161,7 @@ var staticRenderFns = [
                         [
                           _c("i", { staticClass: "fas fa-times" }),
                           _vm._v(
-                            "\n                                        Close Project"
+                            "\n                                      Close Project"
                           )
                         ]
                       )

@@ -1,11 +1,13 @@
 <template>
     <div class="container">
-
+        <pre>
+            {{ sortProperty, sortDirection | json }}
+        </pre>
         <table class="table table-bordered table-striped table-hover">
             <thead>
                 <tr>
-                    <th>Nome</th>
-                    <th>E-mail</th>
+                    <th><a href="#" @click="sort($event, 'name')"> Nome </a></th>
+                    <th><a href="#" @click="sort($event, 'email')">E-mail</a></th>
                 </tr>
             </thead>
             <tbody>
@@ -29,9 +31,16 @@
         data() {
             return {
                 list: [],
+                sortProperty: 'name',
+                sortDirection: 1,
             }
         },
 
+        /*filters: {
+            orderBy(sortProperty, sortDirection);
+            sortProperty: 'name',
+            sortDirection: 1,
+        },*/
         ready() {},
 
         mounted() {

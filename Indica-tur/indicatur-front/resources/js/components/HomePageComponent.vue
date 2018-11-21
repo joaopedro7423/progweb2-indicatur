@@ -1,7 +1,7 @@
 <template>
   <div>
       <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
                 <a class="navbar-brand js-scroll-trigger" href="#page-top">IndicaTur</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -18,13 +18,16 @@
                             <a class="nav-link js-scroll-trigger" href="#itinerario">Itinerários</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#about">Sobre</a>
+                            <a class="nav-link js-scroll-trigger" href="#sobre">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#team">Time</a>
+                            <a class="nav-link js-scroll-trigger" href="#time">Time</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#contact">Contato</a>
+                            <a class="nav-link js-scroll-trigger" href="#contato">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#">Login</a>
                         </li>
                     </ul>
                 </div>
@@ -116,8 +119,8 @@
                             <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
                         </a>
                         <div class="portfolio-caption">
-                            <h4>Explore</h4>
-                            <p class="text-muted">Graphic Design</p>
+                            <h4>Montes Claros</h4>
+                            <p class="text-muted">Temos rotas que acompanham os concursos públicos mais conhecidos. </p>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 portfolio-item">
@@ -130,8 +133,8 @@
                             <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
                         </a>
                         <div class="portfolio-caption">
-                            <h4>Finish</h4>
-                            <p class="text-muted">Identity</p>
+                            <h4>São Paulo</h4>
+                            <p class="text-muted">Nossas rotas incluem as grandes capitais</p>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 portfolio-item">
@@ -144,8 +147,8 @@
                             <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
                         </a>
                         <div class="portfolio-caption">
-                            <h4>Lines</h4>
-                            <p class="text-muted">Branding</p>
+                            <h4>Maringá</h4>
+                            <p class="text-muted">Trabalhamos também com o Sul do país</p>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 portfolio-item">
@@ -158,8 +161,8 @@
                             <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
                         </a>
                         <div class="portfolio-caption">
-                            <h4>Southwest</h4>
-                            <p class="text-muted">Website Design</p>
+                            <h4>Curitiba</h4>
+                            <p class="text-muted">Conheça a capital da Rússia Brasileira</p>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 portfolio-item">
@@ -172,8 +175,8 @@
                             <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
                         </a>
                         <div class="portfolio-caption">
-                            <h4>Window</h4>
-                            <p class="text-muted">Photography</p>
+                            <h4>Brasília</h4>
+                            <p class="text-muted">Também podemos acompanhar sobre</p>
                         </div>
                     </div>
                 </div>
@@ -181,12 +184,12 @@
         </section>
 
         <!-- About -->
-        <section id="about">
+        <section id="sobre">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h2 class="section-heading text-uppercase">About</h2>
-                        <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                        <h2 class="section-heading text-uppercase">Sobre</h2>
+                        <h3 class="section-subheading text-muted">Conheça um pouco sobre nossa história.</h3>
                     </div>
                 </div>
                 <div class="row">
@@ -274,11 +277,11 @@
         </section>
 
         <!-- Team -->
-        <section class="bg-light" id="team">
+        <section class="bg-light" id="time">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+                        <h2 class="section-heading text-uppercase">Nosso time</h2>
                         <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                     </div>
                 </div>
@@ -286,7 +289,7 @@
                     <div class="col-sm-4">
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
-                            <h4>Kay Garland</h4>
+                            <h4>Kobe Artic</h4>
                             <p class="text-muted">Lead Designer</p>
                             <ul class="list-inline social-buttons">
                                 <li class="list-inline-item">
@@ -395,11 +398,11 @@
         </section>
 
         <!-- Contact -->
-        <section id="contact">
+        <section id="contato">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h2 class="section-heading text-uppercase">Contact Us</h2>
+                        <h2 class="section-heading text-uppercase">Contate-nos</h2>
                         <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                     </div>
                 </div>
