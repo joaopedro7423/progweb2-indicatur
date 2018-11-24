@@ -16,8 +16,5 @@ class HomeController extends Controller
     {
         return view('homepage.index');
     }
-    public function logar()
-    {
-        return view('logar');
-    }
+    
 }

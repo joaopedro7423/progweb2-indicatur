@@ -27,7 +27,7 @@
                             <a class="nav-link js-scroll-trigger" href="#contato">Contato</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#">Login</a>
+                            <router-link to="/login" class="nav-link js-scroll-trigger" href="#">Login</router-link>
                         </li>
                     </ul>
                 </div>

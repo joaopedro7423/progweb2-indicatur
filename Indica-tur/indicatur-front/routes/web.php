@@ -5,7 +5,7 @@ Route::get('/listausuarios', 'UsuarioController@listaUsuarios')->name('ListaUsua
 
 Route::get('/home', 'HomeController@home')->name('homepage');
 
-Route::get('/logar', 'HomeController@logar')->name('login');
+Route::get('/logado', 'LoginController@logar')->name('login');
 
 Auth::routes();
 

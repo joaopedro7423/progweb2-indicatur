@@ -2,6 +2,6 @@
 
 @section('contente')
 
-<login-component></login-component>
+<logado-component></logado-component>
 
 @endsection
